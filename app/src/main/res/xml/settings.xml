@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_reboot_required_title">
+        <EditTextPreference android:title="@string/settings_scale_title"
+            android:summary="@string/settings_scale_summary"
+            android:inputType="numberDecimal"
+            android:defaultValue="1"
+            android:hint="1"
+            android:key="scalePref" />
+
+        <SwitchPreference android:title="@string/settings_shortcut_title"
+            android:summary="@string/settings_shortcut_summary"
+            android:key="shortcutEnabled"
+            android:defaultValue="false"/>
+        <!-- Todo: Find alternate shortcut method -->
+        <!-- <CheckBoxPreference android:title="@string/settings_altshortcut_title"
+            android:summary="@string/settings_altshortcut_summary"
+            android:key="altShortcutMethod" /> -->
+
+        <SwitchPreference android:title="@string/settings_safety_title"
+            android:summary="@string/settings_safety_summary"
+            android:key="composeFlag"
+            android:defaultValue="true"/>
+
+        <EditTextPreference android:title="@string/settings_path_title"
+            android:summary="@string/settings_path_summary"
+            android:key="customPath"
+            android:defaultValue=""
+            android:hint="@string/settings_path_hint" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/support_title">
+
+        <ListPreference android:title="@string/donation_title"
+            android:key="donationKeyYay"
+            android:entries="@array/donationChoices"
+            android:entryValues="@array/donationValues"
+            android:summary="@string/donation_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

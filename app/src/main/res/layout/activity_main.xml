@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.skehmatics.globalponymotes.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:id="@+id/emoteEmote"
+            android:layout_marginTop="96dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="doToast"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/emoteFeedback"
+            android:layout_below="@id/emoteEmote"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bugButton"
+            android:layout_below="@id/emoteFeedback"
+            android:layout_centerHorizontal="true" />
+
+
+        <LinearLayout
+            android:layout_below="@id/emoteFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/extraLayout"
+            android:visibility="gone"
+            android:layout_marginTop="72dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/colorAccent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_text"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/limitations_title"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/colorAccent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:text="@string/limitations_text"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

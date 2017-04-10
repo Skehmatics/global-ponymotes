@@ -1,0 +1,93 @@
+<resources>
+    <!-- Titles -->
+    <string name="app_name">Global PonyMotes</string>
+    <string name="app_name_short">GPM</string>
+    <string name="title_activity_main">Global PonyMotes</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Main Interface -->
+    <string name="feedback_fail_xposed">I cannot communicate with the Xposed Framework, which is necessary for this app.\nDid you forget to activate this module and reboot?</string>
+    <string name="feedback_fail_io">I cannot find the PonyMote files. \nDo you have DinsFire64\'s PonyMotes app installed and your database up-to-date?</string>
+    <string name="feedback_pass">If you see a pony, all is well!</string>
+    <string name="status_fail">Uh oh…</string>
+    <string name="status_pass">[](/adorkable \"Best pone and you know it\")</string>
+
+    <string name="help_title">Help</string>
+    <string name="help_text">To view alt-text and emote name, tap on the emote.\nNote that this usually won\'t work in areas where tapping the text does another action.\n\nIf you don\'t know all the emote names off the top of your head, you can use DinsFire\'s PonyMote app to search and copy the names to your clipboard.\n\nYou can also enable a shortcut in the settings that lets you search for emotes via the copy/cut/paste menu. This very likely won\'t work in OEM skinned ROMs, so it is disabled by default.</string>
+    <string name="limitations_title">Limitations</string>
+    <string name="limitations_text">Note that this will not work in apps that either\n1: hide the emote text (most reddit apps) and\n2: are not using android APIs (text in web browsers or games).\n\nI\'m working on getting some reddit apps to add an option to disable hiding emotes and will update this as they adopt it.\n\nBy default, emotes are marked to be removed in some cases (such as email clients or text currently being edited) to maximize compatibility. This can be deactivated in the settings if you don\'t plan on emailing an emote anytime soon.</string>
+
+    <string name="temporary_workaround"><![CDATA[/adorkable - <i>\"Best pone and you know it\"</i>]]></string>
+    <string name="reboot_required">A reboot is required to take effect.</string>
+
+    <!-- Settings -->
+    <string name="settings_reboot_required_title">Requires a reboot to take effect</string>
+    <string name="settings_scale_title">Scaling Factor</string>
+    <string name="settings_scale_summary">Customize emote size to your liking.</string>
+    <string name="settings_shortcut_title">PonyMote Shortcut</string>
+    <string name="settings_shortcut_summary">Puts the shortcut next to the built in cut/copy/paste menus. WARNING: Not compatible with some ROMs.</string>
+    <string name="settings_altshortcut_title">Alternate Shortcut Method</string>
+    <string name="settings_altshortcut_summary">Use an alternate method for placing the shortcut. Try this if the main method does not work.</string>
+    <string name="settings_safety_title">Safe Composing</string>
+    <string name="settings_safety_summary">Removes emotes in text that is either being edited or states it should not be styled. Adds extra compatibility at the sacrifice of emotes in some fields.</string>
+
+    <!-- Donations strings -->
+    <string name="support_title">Support Me!</string>
+    <string name="donation_title">Donate</string>
+    <string name="donation_summary">If you enjoy this app and want to help support it or others in the future, donations are very much appreciated! You can also pay me in hugs.</string>
+
+    <string name="donate_hug_text">Feedback is worth just about as much to me as a dollar or two. \nDon\'t be shy, say hi!</string>
+
+    <string name="toast_error_billing_allowed">Something went wrong. Purchases may not be allowed on this device.</string>
+    <string name="toast_error_billing_connection">Something went wrong. Are you connected to the internet?</string>
+    <string name="toast_error_billing_other">Something went wrong. Probably my fault, sorry!</string>
+    <string name="toast_donation_success">Donation Successful! Thanks :D</string>
+    <string name="toast_error_billing_owned">You already donated: Don\'t worry about it!</string>
+
+    <string-array name="donationChoices">
+        <item>$0.00 - A hug.</item>
+        <item>$1.12 - Coffee.</item>
+        <item>$3.36 - Three coffees.</item>
+        <item>$6.45 - Pizza.</item>
+        <item>$10.93 - Pizza and a days worth of coffee.</item>
+        <item>$19.35 - Food for the week.</item>
+    </string-array>
+    <string-array name="donationValues">
+        <item>hug</item>
+        <item>coffee</item>
+        <item>threecoffees</item>
+        <item>pizza</item>
+        <item>pizzaandcoffee</item>
+        <item>weekoffood</item>
+    </string-array>
+
+    <string-array name="hugs">
+        <item>[](/abhugs)</item>
+        <item>[](/aloelotushug)</item>
+        <item>[](/appledashhug)</item>
+        <item>[](/bpandchug)</item>
+        <item>[](/colgatehug)</item>
+        <item>[](/dashderpyhug)</item>
+        <item>[](/daringdashhug)</item>
+        <item>[](/derpyhug)</item>
+        <item>[](/dashieshyhug)</item>
+        <item>[](/emeraldkeyboardhug)</item>
+        <item>[](/fflutterdashhug)</item>
+        <item>[](/flutterpiehug)</item>
+        <item>[](/hugyouandkissyouandloveyouforever)</item>
+        <item>[](/lbcheerhug)</item>
+        <item>[](/ladyhugsawake)</item>
+        <item>[](/lunatwihug)</item>
+        <item>[](/octyvinylhug)</item>
+        <item>[](/pinkieflutterhug)</item>
+        <item>[](/shyderpyhug)</item>
+        <item>[](/tdhug)</item>
+        <item>[](/taviscratchhuggle)</item>
+        <item>[](/twivinylhug)</item>
+        <item>[](/unhug)</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="settings_path_summary">If the app fails to find your emotes folder, use this to forcefully define it\'s location.</string>
+    <string name="settings_path_title">Custom Path</string>
+    <string name="settings_path_hint">Example: /storage/emulated/0/RedditEmotes</string>
+</resources>
